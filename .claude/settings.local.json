@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /Users/joaosiqueira/Documents/• Claude/Projetos/SolarAtalaia/imgs/)",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget",
+      "Bash(mv \"14D0813D-8117-4926-A85B-8E7625006B6D.jpg\" \"foto-01.jpg\")",
+      "Bash(mv \"6629F906-D13D-4448-9353-5E9EDD90471B.jpg\" \"foto-02.jpg\")",
+      "Bash(mv \"IMG_0470.JPG\" \"foto-03.jpg\")",
+      "Bash(mv \"IMG_1111.JPG\" \"foto-04.jpg\")",
+      "Bash(mv \"IMG_2929.jpeg\" \"foto-05.jpg\")",
+      "Bash(gh auth *)"
+    ]
+  }
+}

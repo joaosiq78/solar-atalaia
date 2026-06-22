@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2Q4BMRRH7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X2Q4BMRRH7');
+  </script>
+
   <!-- SEO -->
   <title>Solar Atalaia – Casa de Temporada em Arraial do Cabo com Vista para o Mar</title>
   <meta name="description" content="Casa de aluguel de temporada no Pontal do Atalaia, Arraial do Cabo. Vista panorâmica para o oceano, piscina infinita, deck com rede e silêncio absoluto. Reserve no Airbnb." />
@@ -449,6 +458,14 @@
     // Pause on tab hidden
     document.addEventListener('visibilitychange', () => {
       document.hidden ? clearInterval(timer) : resetTimer();
+    });
+
+    // Rastreia clique no botão do Airbnb
+    document.querySelector('.cta a').addEventListener('click', () => {
+      gtag('event', 'click_airbnb', {
+        event_category: 'CTA',
+        event_label: 'Botão Ver no Airbnb'
+      });
     });
   </script>
 </body>
